@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="refresh" content="0; url=/carpet-cleaning-service-addis-ababa.html">
-  <link rel="canonical" href="https://yourdomain.com/carpet-cleaning-service-addis-ababa.html">
+  <link rel="canonical" href="https://sameclean.com/carpet-cleaning-service-addis-ababa.html">
   <title>Redirecting...</title>
 </head>
 <body>
