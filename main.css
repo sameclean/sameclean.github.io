@@ -6,7 +6,7 @@ main{width:100%;float:left;position:relative;background:#F5F5F5;padding-bottom:7
 .container img{max-width:100%;object-fit:contain;border-radius:15px;height:auto}
 .container a{color:#880000;text-decoration:none;position:relative;border-bottom: 1px solid #D5D5D5}
 img, .container img{object-fit:contain}
-.header-image{background:url('../img/header-image.jpg');width:100%;height:300px;position:relative;top:64px;background-repeat:no-repeat;background-position:center center}
+.header-image{background:url('../header-image.jpg');width:100%;height:300px;position:relative;top:64px;background-repeat:no-repeat;background-position:center center}
 .usp, .usp2{left:36%;top:120px;position:relative;color:#000;font-size:38px;width: calc(100% - 36%)}
 form{background:#FFF;padding:20px;border-radius:8px;margin-top:10px;border:1px solid #F1F1F1;margin-bottom:20px}
 input, textarea, select{width:100%;margin:10px 0;border:1px solid #D3D3D3;border-radius:5px;padding:8px;font-size:18px;margin-bottom:2px;box-sizing:border-box}
@@ -61,7 +61,7 @@ label{color:#1A1A1A}
 .centerDiv a{display:block;margin:2px 0;padding:2px 0;width:fit-content}
 }
 @media (max-width:1280px){
-.header-image{background:url('../img/header-image-medium.jpg');width:100%;height:257px;top:65px}
+.header-image{background:url('../header-image-medium.jpg');width:100%;height:257px;top:65px}
 .usp, .usp2{left: 260px;top:90px;position:relative;font-size:30px;width:calc(100% - 300px)}
 .usp2{width:380px;top:106px}
 }
@@ -69,7 +69,7 @@ label{color:#1A1A1A}
 @media (max-width: 500px) {
 .cta-button{font-size:14px;padding:10px 16px}
 .button{width:100%; text-align: center;box-sizing: border-box}
-.header-image{background:url('../img/header-image-small.jpg');width:100%;height:133px;top:62px}
+.header-image{background:url('../header-image-small.jpg');width:100%;height:133px;top:62px}
 .usp, .usp2{left: 100px;top:34px;position:relative;font-size:22px;width:calc(100% - 110px)}
 .usp2{top:48px}
 form{padding:0px;background:#F5F5F5}
@@ -111,6 +111,6 @@ form{padding:0px;background:#F5F5F5}
 }
 
 @media (min-width: 1915px ) {
-.header-image{background:url('../img/header-image-wide.jpg');width:100%;height:300px;position:relative;top:64px;background-repeat:no-repeat;background-position:center center}
+.header-image{background:url('../header-image-wide.jpg');width:100%;height:300px;position:relative;top:64px;background-repeat:no-repeat;background-position:center center}
 }
 
