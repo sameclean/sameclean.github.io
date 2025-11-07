@@ -108,7 +108,11 @@
 
 
 	
-<p>Opening hours:</p><p>Monday: <strong>8am - 5pm</strong><br>Tuesday:&nbsp;<strong>8am - 5pm</strong><br>Wednesday:&nbsp;<strong>8am - 5pm</strong><br>Thursday:&nbsp;<strong>8am - 5pm</strong><br>Friday:&nbsp;<strong>8am - 5pm</strong><br>Saturday:&nbsp;<strong>8am - 5pm</strong><br>Sunday: <strong>closed</strong><br><br>You can contact us 24/7 for information on email: <span id="email"></span>
+<p>Opening hours:</p><p>Monday: <strong>8am - 5pm</strong><br>Tuesday:&nbsp;<strong>8am - 5pm</strong><br>Wednesday:&nbsp;<strong>8am - 5pm</strong><br>Thursday:&nbsp;<strong>8am - 5pm</strong><br>Friday:&nbsp;<strong>8am - 5pm</strong><br>Saturday:&nbsp;<strong>8am - 5pm</strong><br>Sunday: <strong>closed</strong><br><br>You can contact us 24/7 for information on email: 
+
+
+
+	<span id="email"></span>
 
 <script>
 (function() {
@@ -121,17 +125,27 @@
   }
 
   var email = decodeBase64(encoded);
-  var mailto = "mailto:" + email;
+
+  // Optioneel: vooraf ingevulde onderwerp en body (werkt in de meeste mail clients)
+  var subject = encodeURIComponent("Contact from SameClean website");
+  var body = encodeURIComponent("Hi,\n\nI like to have some information about..");
+  var mailto = "mailto:" + email + "?subject=" + subject + "&body=" + body;
 
   // Maak link en voeg toe aan de pagina
   var span = document.getElementById("email");
   var link = document.createElement("a");
   link.href = mailto;
   link.textContent = email;
+  link.style.cursor = "pointer"; // zorgt voor hand-cursor op desktop
 
   span.appendChild(link);
 })();
-</script><br><br>Phone: <a href="tel:+251 91 173 2411">+251 91 173 2411</a>.</p><p>Adress:&nbsp; Hayat 49 condominium, Bole, Addis Ababa, Ethiopia.</p><p>&nbsp;</p>
+</script>
+
+
+	
+	
+	<br><br>Phone: <a href="tel:+251 91 173 2411">+251 91 173 2411</a>.</p><p>Adress:&nbsp; Hayat 49 condominium, Bole, Addis Ababa, Ethiopia.</p><p>&nbsp;</p>
 
 <iframe title="location SameClean.com Cleaning Company" src="https://www.google.com/maps/embed/v1/place?q=SameClean.com+addis+abeba&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8&zoom=12" style="border:0;border-radius:10px;width:100%;height:300px" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
@@ -169,6 +183,7 @@
 
 
 </html>
+
 
 
 
