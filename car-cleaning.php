@@ -5,10 +5,10 @@
   <title>Redirecting...</title>
   <script>
     // Redirect to new page
-    window.location.href = "/new-page.html";
+    window.location.href = "/car-wash-addis-ababa.html";
   </script>
 </head>
 <body>
-  <p>If you are not redirected automatically, <a href="/new-page.html">click here</a>.</p>
+  <p>If you are not redirected automatically, <a href="/car-wash-addis-ababa.html">click here</a>.</p>
 </body>
 </html>
