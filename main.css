@@ -83,7 +83,7 @@ form{padding:0px;background:#F5F5F5}
 .dropdown:hover .dropdown-content{display:block}
 .dropdown:hover .dropbtn{background-color:#820000}
 .header a{color:#7d0303}
-.header{background-color:#880000;box-shadow:1px 1px 4px 0 rgba(0,0,0,.1);position:fixed;width:100%;z-index:3;}
+.header{background-color:#880000;box-shadow:1px 1px 4px 0 rgba(0,0,0,.1);position:fixed;width:100%;z-index:9999;}
 .header ul{margin:0;padding:0;list-style:none;overflow:hidden;background-color:#880000}
 .header li a{display:block;padding:20px 20px;text-decoration:none;color:#fff}
 .header li a:hover,
