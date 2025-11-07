@@ -26,7 +26,7 @@ label{color:#1A1A1A}
 .centerDiv a{color:#880000;margin-right:10px;border-bottom: 1px solid #D3D3D3;text-decoration:none}
 .nap{margin-top:24px;font-style:italic;color:#333}
 .nap a{margin:0;padding:0 !important;text-decoration:none}
-.faq, .ctaBox{width:100%;padding:18px 18px 26px 18px;height:auto;margin:30px 0;background:#FFF;color:#000 !important;border-radius:10px;box-sizing:border-box;border:1px solid #F2F2F2;}
+.faq, .ctaBox{width:100%;padding:18px 18px 26px 18px;height:auto;margin:30px 0;background:#FFF;color:#000 !important;border-radius:10px;box-sizing:border-box;border:1px solid #F2F2F2}
 .faq h3, .ctaBox h2{margin:0;padding:0;line-height:24px;font-size:20px;color:#000}
 .h2{padding:20px 0 0 7px;line-height:12px;font-size:20px}
 .error{color:red;font-size:0.9em;margin-top:4px;margin-bottom:14px;font-style:italic}
@@ -83,7 +83,7 @@ form{padding:0px;background:#F5F5F5}
 .dropdown:hover .dropdown-content{display:block}
 .dropdown:hover .dropbtn{background-color:#820000}
 .header a{color:#7d0303}
-.header{background-color:#880000;box-shadow:1px 1px 4px 0 rgba(0,0,0,.1);position:fixed;width:100%;z-index:9999;}
+.header{background-color:#880000;box-shadow:1px 1px 4px 0 rgba(0,0,0,.1);position:fixed;width:100%;z-index:9999}
 .header ul{margin:0;padding:0;list-style:none;overflow:hidden;background-color:#880000}
 .header li a{display:block;padding:20px 20px;text-decoration:none;color:#fff}
 .header li a:hover,
