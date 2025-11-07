@@ -163,7 +163,7 @@
   const navButton = L.control({position: 'topright'});
   navButton.onAdd = function(map) {
     const div = L.DomUtil.create('div', 'nav-button');
-    div.innerHTML = `<a href="https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=9.0175%2C38.8924" target="_blank" style="background:white; padding:5px; border-radius:5px; text-decoration:none;">Navigeren</a>`;
+    div.innerHTML = `<a href="https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=9.0175%2C38.8924" target="_blank" style="background:white; padding:5px; border-radius:5px; text-decoration:none;">Navigate</a>`;
     return div;
   };
   navButton.addTo(map);
@@ -205,6 +205,7 @@
 
 
 </html>
+
 
 
 
