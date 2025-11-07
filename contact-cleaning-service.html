@@ -116,27 +116,23 @@
 
 <script>
 (function() {
-  // Base64-gecodeerd e-mailadres
-  var encoded = "c2FtZWNsZWFuNzdAZ21haWwuY29t";
 
-  // Decodeer Base64
+  var encoded = "c2FtZWNsZWFuNzdAZ21haWwuY29t";
   function decodeBase64(str) {
     return atob(str);
   }
 
   var email = decodeBase64(encoded);
 
-  // Optioneel: vooraf ingevulde onderwerp en body (werkt in de meeste mail clients)
   var subject = encodeURIComponent("Contact from SameClean website");
   var body = encodeURIComponent("Hi,\n\nI like to have some information about..");
   var mailto = "mailto:" + email + "?subject=" + subject + "&body=" + body;
 
-  // Maak link en voeg toe aan de pagina
   var span = document.getElementById("email");
   var link = document.createElement("a");
   link.href = mailto;
   link.textContent = email;
-  link.style.cursor = "pointer"; // zorgt voor hand-cursor op desktop
+  link.style.cursor = "pointer";
 
   span.appendChild(link);
 })();
@@ -153,21 +149,17 @@
 <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
 
 <script>
-  // 1. Kaart initialiseren
-  const map = L.map('map').setView([9.0175, 38.8924], 17);
 
-  // 2. OSM tegellaag
+  const map = L.map('map').setView([9.0175, 38.8924], 15);
+
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
       maxZoom: 19,
   }).addTo(map);
 
-  // 3. Marker toevoegen
   const marker = L.marker([9.0175, 38.8924]).addTo(map);
 
-  // 4. Permanente label bij de marker
   marker.bindTooltip("SameClean.com", {permanent: true, direction: "top"}).openTooltip();
 
-  // 5. Navigatieknop
   const navButton = L.control({position: 'topright'});
   navButton.onAdd = function(map) {
     const div = L.DomUtil.create('div', 'nav-button');
@@ -213,6 +205,7 @@
 
 
 </html>
+
 
 
 
