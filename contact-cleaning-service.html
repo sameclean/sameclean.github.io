@@ -147,18 +147,36 @@
 	
 	<br><br>Phone: <a href="tel:+251911732411">+251 91 173 2411</a>.</p><p>Adress:&nbsp; Hayat 49 condominium, Bole, Addis Ababa, Ethiopia.</p>
 
-<div style="width:100%; height:300px; border-radius:10px; overflow:hidden;">
-  <iframe
-    src="https://www.openstreetmap.org/export/embed.html?bbox=38.8870%2C9.0100%2C38.8970%2C9.0250&amp;layer=mapnik&amp;marker=9.0175%2C38.8924"
-    style="border:0; width:100%; height:100%; overflow:hidden; margin:0; padding:0">
-  </iframe>
-</div>
-<br>
-<small>
-  <a href="https://www.openstreetmap.org/?mlat=9.0175&mlon=38.8924#map=17/9.0175/38.8924" target="_blank" rel="noopener">
-    View larger map and navigate →
-  </a>
-</small>
+<div id="map" style="width:100%; height:300px; border-radius:10px;"></div>
+
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+
+<script>
+  // 1. Kaart initialiseren
+  const map = L.map('map').setView([9.0175, 38.8924], 17);
+
+  // 2. OSM tegellaag
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      maxZoom: 19,
+  }).addTo(map);
+
+  // 3. Marker toevoegen
+  const marker = L.marker([9.0175, 38.8924]).addTo(map);
+
+  // 4. Permanente label bij de marker
+  marker.bindTooltip("SameClean.com", {permanent: true, direction: "top"}).openTooltip();
+
+  // 5. Navigatieknop
+  const navButton = L.control({position: 'topright'});
+  navButton.onAdd = function(map) {
+    const div = L.DomUtil.create('div', 'nav-button');
+    div.innerHTML = `<a href="https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=9.0175%2C38.8924" target="_blank" style="background:white; padding:5px; border-radius:5px; text-decoration:none;">Navigeren</a>`;
+    return div;
+  };
+  navButton.addTo(map);
+</script>
+
 
 
 
@@ -195,6 +213,7 @@
 
 
 </html>
+
 
 
 
